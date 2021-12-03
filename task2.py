@@ -81,7 +81,9 @@ def cycle_power(some_arr: list, power: int) -> list:
 
 
 def find(cycles: list, index: int):
-    res = []
+    """
+    Смещение по циклу
+    """
     for cycle in cycles:
         if index in cycle:
             moved = cycle[(cycle.index(index)+1) % len(cycle)]
@@ -152,7 +154,7 @@ def solve(arr_a: list, arr_b: list, power_a: int, power_b: int):
 if __name__ == '__main__':
     a = input("Перестановка а, числа второй строки через пробел: ").split()
     a = list(map(int, a))
-    b = input("Перестановка а, числа второй строки через пробел: ").split()
+    b = input("Перестановка b, числа второй строки через пробел: ").split()
     b = list(map(int, b))
     pow_a = int(input("Степень a: "))
     pow_b = int(input("Степень b: "))
