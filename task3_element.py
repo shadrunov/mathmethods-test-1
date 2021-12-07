@@ -17,7 +17,7 @@ n = 0
 for i in range(1, y):
     if math.gcd(i, y) == 1:
         print(i)
-    n += 1
+        n += 1
 print('n =', n)
 
 # begin after first "1" appears
